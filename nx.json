@@ -38,6 +38,13 @@
     },
     "ui": {
       "tags": []
+    },
+    "alt-app": {
+      "tags": []
+    },
+    "alt-app-e2e": {
+      "tags": [],
+      "implicitDependencies": ["alt-app"]
     }
   }
 }
