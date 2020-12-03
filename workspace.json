@@ -16,9 +16,13 @@
             "polyfills": "apps/todos/src/polyfills.ts",
             "tsConfig": "apps/todos/tsconfig.app.json",
             "assets": ["apps/todos/src/favicon.ico", "apps/todos/src/assets"],
-            "styles": ["apps/todos/src/styles.css"],
+            "styles": ["apps/todos/src/styles.css","libs/ui/src/lib/styles/main.scss"],
             "scripts": [],
-            "webpackConfig": "@nrwl/react/plugins/webpack"
+            "webpackConfig": "@nrwl/react/plugins/webpack",
+            "stylePreprocessorOptions": {
+              "includePaths": ["libs/ui/src/lib/styles"]
+          },
+            "extractCss": true
           },
           "configurations": {
             "production": {
